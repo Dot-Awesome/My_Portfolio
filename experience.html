@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Suraj Magdum</title>
+    <link rel="icon" type="image/x-icon" href="img/SM_1.png">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="/tailwind.config.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+        <style>
+             @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .fade-in {
+            animation: fadeIn 1s ease-in-out;
+        }
+
+        .hover-grow:hover {
+            transform: scale(1.05);
+            transition: transform 0.3s;
+        }
+        </style>
+
+</head>
+
+<body class="overflow-x-hidden fade-in">
+
+    <div class="fixed top-0 right-0 w-11/12 -z-10 transalte-y-[80%]">
+        <img src="img/header-bg-color.png" class="w-full">
+    </div>
+    <div>
+        <nav class="w-full fixed px-4 lg:px-6 py-2 flex items-center justify-between z-50 fade-in bg-white ">
+            <img src="img/Suraj_logo_processed.png" alt="Logo" class="w-[14%] cursor-pointer mr-10 hover-grow">
+            <ul class="hidden md:flex items-center gap-4 lg:gap-6 rounded-full px-8 py-2 bg-white shadow-sm">
+                <li>
+                    <a href="index.html" class="hover-grow">Home</a>
+                </li>
+                <li>
+                    <a href="about.html" class="hover-grow">About Me</a>
+                </li>
+                <li>
+                    <a href="experience.html" class="hover-grow">Experience</a>
+                </li>
+                <li>
+                    <a href="projects.html" class="hover-grow">Projects</a>
+                </li>
+                <li>
+                    <a href="certification.html" class="hover-grow">Certifications</a>
+                </li>
+            </ul>
+            <div class="flex items-center gap-3">
+                <a href="contact.html" class="hidden lg:flex items-center gap-2 px-8 py-2 border border-gray-500 rounded-full hover-grow">Contact Me<i class="fa-solid fa-phone"></i></a>
+                <button class="block md:hidden ml-2" onclick="openMenu()">
+                    <img src="img/menu-black.png" alt="Menu" class="w-5">
+                </button>
+            </div>
+        
+            <!-- Mobile Navigation -->
+        
+            <ul id="sidemenu" class="flex md:hidden flex-col py-16 px-8 fixed gap-3 -right-64 top-0 bottom-0 w-64 z-50 h-screen bg-rose-50 transition duration-500 slide-in">
+                <div class="absolute right-4 top-4" onclick="closeMenu()">
+                    <img src="img/close-black.png" class="w-5 cursor-pointer">
+                </div>
+                <li>
+                    <a href="index.html" onclick="closeMenu()">Home</a>
+                </li>
+                <li>
+                    <a href="about.html" onclick="closeMenu()">About Me</a>
+                </li>
+                <li>
+                    <a href="experience.html" onclick="closeMenu()">Experience</a>
+                </li>
+                <li>
+                    <a href="projects.html" onclick="closeMenu()">Projects</a>
+                </li>
+                <li>
+                    <a href="certification.html" onclick="closeMenu()">Certifications</a>
+                </li>
+            </ul>
+        </nav>
+        
+    </div>
+    <!--Experience-->
+
+    <div class="w-11/12 pl-36 pr-1 pt-7 pb-3">
+        <h4 class="text-center  mb-10 text-lg mt-28  font-mono"></h4>
+        <p class="text-center max-w-2xl mx-auto mt-5 mb-9">
+            Explore my diverse professional journey through various internships, where I've honed my skills
+            & gained invaluable experience. Discover the highlights of my growth and industry exposure.
+        </p>
+
+        <div class="grid grid-cols-auto gap-14 my-4 sm:grid-cols-2">
+            <div class="border border-gray-400 rounded-lg px-8 py-12 
+            hover:shadow-[4px_4px_0_#000] cursor-pointer hover:bg-[#fcf4ff]
+            hover:-translate-y-1 duration-500">
+                <div class="flex justify-center mb-4">
+                    <img src="img/elite_softwares_pvt_ltd__logo.jpeg" alt="" class="w-16">
+                </div>
+                <h3 class="text-lg my-3 text-gray-700">FrontEnd Developer Intern at Elite Softwares</h3>
+                <h3 class="text-lg my-3 text-gray-700">Feb 2023 – May 2023 <br>Pune, Maharashtra</h3>
+                <p class="text-sm text-gray-600 leading-5">
+                    • Engineered real projects using HTML, CSS, and Bootstrap during a transformative Web Development Internship,
+                    enhancing problem-solving skills<br>
+                    • Cultivated teamwork and communication abilities by collaborating with seasoned developers, receiving feedback,
+                    and expanding industry networks<br>
+                    • Received regular feedback, fostering professional growth and networking opportunities.
+                </p>
+            </div>
+
+
+            <div class="border border-gray-400 rounded-lg px-8 py-12 hover:shadow-[4px_4px_0_#000] cursor-pointer hover:bg-[#fcf4ff] hover:-translate-y-1 duration-500">
+                <img src="img/L&T logo.png" alt="" class="w-32 mx-auto mb-4">
+                <h3 class="text-lg my-3 text-gray-700">SDE Intern at Larsen & Toubro Technology Services</h3>
+                <h3 class="text-lg my-3 text-gray-700">Jan 2024 – Mar 2024 <br>Pune, Maharashtra</h3>
+                <p class="text-sm text-gray-600 leading-5">
+                    • Spearheaded the TFiber project with Flask, integrating database management, visualization, 
+                    and file handling.<br>
+                    • Leveraged skills in JavaScript, Flask, and Django, collaborating with cross-functional teams to meet client needs
+                    and optimize workflows<br>
+                    • Worked closely with cross-functional teams to meet client needs, showcasing strong teamwork and communication abilities.<br>
+                    • Improved data querying and retrieval efficiency by 50% through the development of an admin dashboard with interactive charts and dynamic tables.
+                </p>
+            </div>
+            
+        </div>
+
+    </div>
+
+        <!--Footer-->
+    <div class="text-center sm:flex items-center justify-between border-t border-gray-400 
+    mx-[10%] my-3 pb-8 pt-4">
+        <p>surajmagdum408@gmail.com &nbsp;© All rights reserved.</p>
+        <ul class="flex items-center gap-10 justify-center mt-4 sm:mt-0">
+            <li><a href="https://www.linkedin.com/in/suraj-magdum-87350521a/">LinkedIn</a></li>
+            <li><a href="https://github.com/Dot-Awesome/">GithHub</a></li>
+            <li><a href="https://www.instagram.com/_.suraj.magdum._/">Instagram</a></li>
+        </ul>
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
